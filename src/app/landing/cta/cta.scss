@@ -1,0 +1,26 @@
+.cta {
+  padding: 1rem 0 4.5rem;
+}
+
+.panel {
+  padding: 3.2rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 40%),
+    linear-gradient(135deg, #7b59e8, #5a3cc4);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--color-shadow);
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing: -0.03em;
+}
+
+p {
+  max-width: 34rem;
+  margin: 0.8rem auto 1.6rem;
+  color: rgba(255, 255, 255, 0.88);
+}

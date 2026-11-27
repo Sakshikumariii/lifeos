@@ -1,0 +1,17 @@
+<section class="features" id="features">
+  <div class="container">
+    <p class="eyebrow">Features</p>
+    <h2>Everything you need for a calmer day</h2>
+    <p class="intro">Four simple spaces. One place to keep life moving forward.</p>
+
+    <div class="grid">
+      @for (item of items; track item.title) {
+        <app-feature-card
+          [title]="item.title"
+          [description]="item.description"
+          [icon]="item.icon"
+        />
+      }
+    </div>
+  </div>
+</section>

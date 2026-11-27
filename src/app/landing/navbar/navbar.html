@@ -1,0 +1,30 @@
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#home" (click)="closeMenu()">
+      <span class="logo-mark" aria-hidden="true">L</span>
+      LifeOS
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" [class.open]="menuOpen" aria-label="Main">
+      <a href="#home" (click)="closeMenu()">Home</a>
+      <a href="#features" (click)="closeMenu()">Features</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" type="button">Login</button>
+        <a class="btn btn-primary" href="#about" (click)="closeMenu()">Get Started</a>
+      </div>
+    </nav>
+  </div>
+</header>
